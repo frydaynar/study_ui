@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+*::selection {
+  background: rgba(66, 184, 131, 0.5);
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+            background-color: #222;
+        }
+

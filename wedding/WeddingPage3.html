@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeddingPage3</title>
+
+    <style>
+
+        * {box-sizing: border-box;}
+        html, body {margin: 0; padding: 0;}
+        body{background-color: #f2e1e1;}
+
+       .lnrContainer {width: 100%; position: relative;}
+
+       .lnrPage1 { text-align: center;}
+       .lnrPage1 .lnrTitle {
+            width: 100%;
+            color: #757575;
+            margin: 10% 0;
+            font-size: 1.2em;
+        }
+       .lnrPage1 .lnrImg {width: 100%;}
+       .lnrPage1 .lnrImg img {
+            border-radius: 10px;
+            width: 85%;
+            filter: grayscale(70%);
+        }
+
+       .lnrPage2 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: space-between;
+            gap: 25%;
+            flex-grow: 1;
+            margin: 5% 0;
+            text-align: center;
+        }
+
+
+       .lnrPage3 {
+            position: relative;
+            text-align: center;
+            height: 400px;
+            background-color: #ffd4d4;
+        }
+        .lnrPage3 .lnrClick {
+            position: absolute;
+            top : 25%;
+            left: 25%;
+            right: 25%;
+            bottom: 25%;
+        }
+
+        .lnrPage3 .lnrClick button {
+            margin-top: 10px;
+            padding: 15px 50px;
+            background-color: #f7857d;
+            border: 0;
+            border-radius: 5px;
+            font-size: 1.4em;
+            color: #fff;
+        }
+        .lnrPage3 .lnrClick button:hover{
+            background-color: #bbb;
+            cursor: pointer;
+        }
+
+        footer div {
+            padding: 15px 0;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            font-size: 1em;
+        }
+
+        .lnrLink:link{
+            color: #fff;
+        }
+        .lnrLink:hover {
+            color: yellowgreen;
+            cursor: pointer;
+        }
+
+        
+
+        
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="lnrContainer">
+        <div class="lnrPage1">
+            <div class="lnrTitle">
+                <h1>THE WEDDING</h1>
+            </div>
+
+            <div class="lnrImg">
+                <img src="/WEB_test/html/D004_25.12.16/images/wedding_location.jpg" alt="웨딩홀 사진">
+            </div>
+        </div>
+
+        <div class="lnrPage2">
+            <div>
+                <h2>When</h2>
+                <p>Wedding Ceremony - 2:00pm</p>
+                <p>Reception & Dinner - 5:00pm</p>
+            </div>
+
+            <div>
+                <h2>Where</h2>
+                <p>Some place, an address</p>
+                <p>Some where, some address</p>
+            </div>
+        </div>
+
+        <div class="lnrPage3">
+            <div class="lnrClick">
+                <h1>HOPE YOU CAN MAKE IT!</h1>
+                <p>Kindly Respond By January, 2017</p>
+                <button type="submit"> RSVP </button>
+            </div>
+        </div>
+    </div>    
+
+    <footer>
+        <div>
+            <p>Powered by <a class="lnrLink" href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+        </div>
+    </footer>
+    
+
+
+
+</body>
+</html>

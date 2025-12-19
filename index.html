@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI연습</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #abd8f9;
+            color: #333;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+        }
+        header .logo {
+            width: 5em;
+            height: 5em;
+        }
+
+        /* 이거 작동 안되는데 다시 알아보자 */
+        /* main .mypage a:hover {
+            background-color: #f9e4a3;
+        } */
+
+
+    </style>
+</head>
+<body>
+    
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4" style="background-color: #fbc1cf;">
+        <div class="w-100" style="height: 100px;">
+            <a href="#" class="d-flex justify-content-center p-2 ">
+                <img src="images/Gohome_logo.JPG" class="logo rounded-circle mx-4" alt="로고 이미지 입니다.">
+                <h1 class="fw-bold rounded-5" style="color: #333;"><span class="text-white">Nara</span>Log</h1>
+            </a>
+        </div>
+    </header>
+
+    <main class="p-5">
+        <div class="mypage p-3 mb-5 border rounded-5 border-dark" style="background-color:  #edebec;" >
+            <a href="wedding/WeddingPage3.html">
+                <div class="d-flex" style="color: #333;">
+                    <div class="py-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                            <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        </svg>
+                    </div>
+                    <div class="px-3">
+                        <p class="my-2">2025.12.16</p>
+                        <h3 class="m-0 fw-bold">Wedding Page</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="mypage p-3 mb-5 border rounded-5 border-dark" style="background-color:  #edebec;" >
+            <a href="movie(bootstrap)/B_main.html">
+                <div class="d-flex" style="color: #333;">
+                    <div class="py-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                            <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        </svg>
+                    </div>
+                    <div class="px-3">
+                        <p class="my-2">2025.12.18</p>
+                        <h3 class="m-0 fw-bold">Movie Page(bootstrap)</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="mypage p-3 mb-5 border rounded-5 border-dark" style="background-color:  #edebec;" >
+            <a href="movie(repl)/ex1.html">
+                <div class="d-flex" style="color: #333;">
+                    <div class="py-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                            <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        </svg>
+                    </div>
+                    <div class="px-3">
+                        <p class="my-2">2025.12.17</p>
+                        <h3 class="m-0 fw-bold">Movie Page(REPL)</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+</body>
+</html>

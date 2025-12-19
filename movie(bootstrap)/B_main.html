@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieVue Bootstrap</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common.css">
+    <script src="http://aiedu.tplinkdns.com/movie.js"></script>
+    
+    <style>
+        .home .search-box input {
+            display: block;
+			appearance: none;
+			border: none;
+			outline: none;
+			background: none;
+        }
+        
+        .home .search-box input[type=text]:focus {
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .home .search-box input[type=text]::placeholder {
+            color: #fff;
+        }
+
+        .home .search-box input[type=submit] {
+            background-color: #dc3545;
+        }
+
+        .home .search-box input[type=submit]:focus {
+            background-color: #dc3545;
+        }
+
+        .home .search-box input[type=submit]:hover {
+            background-color: #d50b1f;
+        }
+
+        .home .movies-list .movie {
+			max-width: 50%;
+			flex: 1 1 30%;
+        }
+
+        .home .movies-list .movie .movie-link .product-image img {
+            height: 275px;
+        }
+
+        .home .movies-list .movie .movie-link .product-image .type {
+            position: absolute;
+            bottom: 50px;
+        }
+
+        .home .movies-list .movie .movie-link .product-image .detail {
+            flex: 1 1 100%;
+        }
+       
+    </style>
+</head>
+<body class="bg-dark" onload="load()">
+
+    <header class="p-2 text-center">
+        <a href="B_main.html">
+            <h1 class="text-light fw-bolder"><span class="text-danger">Nara</span>Movies</h1>
+        </a>
+    </header>
+
+    <main class="home">
+        <div class=" feature-card position-relative overflow-y-hidden">
+            <a href="B_movie.html">
+                <img src="https://i.namu.wiki/i/UuVahbINbTQusjMjbsxCX9iplBS46hYX_DPk841uKlWziSJXhotP_hPvOvf0w0_8n_q1E-bnc37n3FNYa_8YxbMb1Pf9fC7r32I7LIpwHb_mTU-255tfOo-lSHcLDGMt_vWW9twDRpDtpt5xcztR4Q.webp" class="w-100 d-bloc position-relative object-fit-cover" style="height: 300px;" alt="Movie Poster" />
+                <div class="position-absolute bottom-0 w-100 p-3 bg-black bg-opacity-50 text-white">
+                    <h3 class="fs-5 fw-bolder mb-3 ">THE FIRST SLAM DUNK</h3>
+                    <p class="m-0">
+                        "The First Slam Dunk" is a sports animation film written and directed by the original manga creator, Takehiko Inoue.
+                        It depicts the legendary match against Sannoh Industrial High School from the original series.
+                        Shifting the focus from Hanamichi Sakuragi to Ryota Miyagi, the story centers on Ryota’s past and personal growth.
+                        By blending modern 3D CG technology with a unique art style that brings raw pen strokes to life, the film delivers both high-energy basketball action and deep emotional resonance.
+                        It gained massive popularity among fans in their 30s and 40s, setting record-breaking box office milestones for Japanese animation.
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <form action="#" id="movie-search" class="search-box d-flex flex-column justify-content-center align-items-center p-3">
+            <input type="text" name="keyword" placeholder="영화 제목을 입력하세요." class="w-100 mb-3 p-3 bg-light bg-opacity-10 rounded-3 text-center text-white fs-5" />
+            <input type="submit" value="검색" class=" w-50 p-3 border-0 rounded-3 fs-4 fw-bolder text-white "/>
+        </form>
+
+        <div class="movies-list d-flex flex-wrap">
+            <div class="movie p-3">
+                <a href="B_movie.html" class="movie-link d-flex flex-column h-100">
+                    <div class="product-image d-bloc position-relative">
+                        <img src="https://i.namu.wiki/i/UuVahbINbTQusjMjbsxCX9iplBS46hYX_DPk841uKlWziSJXhotP_hPvOvf0w0_8n_q1E-bnc37n3FNYa_8YxbMb1Pf9fC7r32I7LIpwHb_mTU-255tfOo-lSHcLDGMt_vWW9twDRpDtpt5xcztR4Q.webp" class="d-bloc w-100 object-fit-cover rounded-top-5" alt="Movie Poster"/>
+                        <div class="type py-2 px-4 bg-danger text-white text-capitalize">Movie</div>
+                    </div>
+                    <div class="detail bg-danger bg-opacity-50 rounded-bottom-5 text-white px-3">
+                        <p class="year m-0 pt-3 pb-1 ">2022</p>
+                        <h3 class="pb-3 fs-5 fw-bolder">The first slam dunk</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="movie p-3">
+                <a href="B_movie.html" class="movie-link d-flex flex-column h-100">
+                    <div class="product-image d-bloc position-relative">
+                        <img src="https://i.namu.wiki/i/TTlY6uDWda-fMA_O2YsMgaSk7dkcC70Rk95Y0xeMDHFzEvMlEmhV0tz3aDn9k9_EoYV3RMFUYrQNfeAbpWmytFDH6vJJla9hQFre6Pej8JMgIEiIbU7MQCEuA6dhMr4jb1_vIWKj9uVRQwxyvafL3Q.webp" class="d-bloc w-100 object-fit-cover rounded-top-5" alt="Movie Poster"/>
+                        <div class="type py-2 px-4 bg-danger text-white text-capitalize">Movie</div>
+                    </div>
+                    <div class="detail bg-danger bg-opacity-50 rounded-bottom-5 text-white px-3">
+                            <p class="year m-0 pt-3 pb-1">2017</p>
+                            <h3 class="pb-3 fs-5 fw-bolder">Your name</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="movie p-3">
+                <a href="B_movie.html" class="movie-link d-flex flex-column h-100">
+                    <div class="product-image d-bloc position-relative">
+                        <img src="https://i.namu.wiki/i/Qf2ghXbIqVM-w2kAM67fAK1oDezL5UqVk_b0ydI921V-VnCOvjBmHaER_j_Ux97ZZT0ho7um389xnA1dmti0TuWS86UUFk3dGeH0FuLCoRLOIdl7q_EKSCONDOmnr2cAAK-HphDeuTEKduYpNloDCg.webp" class="d-bloc w-100 object-fit-cover rounded-top-5" alt="Movie Poster"/>
+                        <div class="type py-2 px-4 bg-danger text-white text-capitalize">Movie</div>
+                    </div>
+                    <div class="detail bg-danger bg-opacity-50 rounded-bottom-5 text-white px-3">
+                            <p class="year m-0 pt-3 pb-1">2024</p>
+                            <h3 class="pb-3 fs-5 fw-bolder">Inside Out 2</h3>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </main>
+
+</body>
+</html>

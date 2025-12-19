@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With REPL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Fira Sans", sans-serif;
+        }
+
+        *::selection {
+            background: rgba(79, 216, 184, 0.5);
+        }
+
+        body {
+            background-color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* header */
+        header {
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 16px;
+        }
+
+        header h1 {
+            color: #fff;
+        }
+
+        header h1 span {
+            color: #4fd8b8;
+        }
+
+        /* main-card */
+        .home .main-card {
+            position: relative;
+        }
+
+        .home .main-card .main-card-img {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .home .main-card .detail {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0px;
+            padding: 20px;
+        }
+
+        .home .main-card .detail h3 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .home .main-card .detail p {
+            color: #fff;
+        }
+
+        /* search-box */
+        .home .search-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px 20px 20px 20px;
+        }
+
+        .home .search-box input {
+            border: none;
+            outline: none;
+            color: #222;
+        }
+
+        .home .search-box input[type=text] {
+            width: 100%;
+            padding: 15px;
+            border-radius: 30px;
+            background-color: rgba(1, 1, 1, 0.2);
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .home .search-box input[type=text]:focus {
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .home .search-box input[type=text]::placeholder {
+            color: #777;
+            text-align: center;
+        }
+        
+        .home .search-box input[type=submit] {
+            width: 250px;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
+            background-color: rgba(79, 216, 184, 0.8);
+            cursor: pointer;
+        }
+
+        .home .search-box input[type=submit]:hover {
+            background-color: rgba(79, 216, 184, 1);
+        }
+
+        /* main-list */
+        .home .main-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px 8px;
+        }
+
+        .home .main-list .photo {
+            max-width: 50%;
+            flex: 1 1 50%;
+            padding: 20px 20px;
+        }
+
+        .home .main-list .photo .photo-link {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .home .main-list .photo .photo-link .main-list-img {
+            position: relative;
+            display: block;
+        }
+
+        .home .main-list .photo .photo-link .main-list-img img {
+            display: block;
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .home .main-list .photo .photo-link .main-list-img .type {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            padding: 8px 16px;
+            background-color: #4fd8b8;
+            color: #222;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        .home .main-list .photo .photo-link .detail {
+            background-color: rgba(1, 1, 1, 0.2);
+            padding: 15px;
+            flex: 1 1 100%;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .home .main-list .photo .photo-link .detail p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .home .main-list .photo .photo-link .detail h3 {
+            color: #222;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="ex1.html">
+            <h1> WITH <span>REPL</span> </h1>
+        </a>
+    </header>
+
+    <main class="home">
+        <div class="main-card">
+            <a href="ex1_main.html">
+                <img class="main-card-img" src="repl01.jpg" alt="리플 캠페인 봉사 사진 1" />
+                <div class="detail">
+                    <h3>REPL Campaign Volunteer</h3>
+                    <p>
+                        2025.11.22 <br />
+                        리플 2025 하반기 캠페인 봉사 업로드 완료
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <form action="#" class="search-box">
+            <input type="text" name="search" placeholder="검색어를 입력하세요." />
+            <input type="submit" value="검색">
+        </form>
+
+        <div class="main-list">
+            <div class="photo">
+                <a  class="photo-link" href="ex1_main.html">
+                    <div class="main-list-img">
+                        <img src="repl02.jpg" alt="리플 캠페인 봉사 사진 2">
+                        <div class="type">
+                            Photo
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <p>2025.11.22</p>
+                        <h3>[2025 하반기] 캠페인 봉사 사진</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="photo">
+                <a class="photo-link" href="ex1_main.html">
+                    <div class="main-list-img">
+                        <img src="repl03.jpg" alt="리플 캠페인 봉사 사진 3">
+                        <div class="type">
+                            Video
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <p>2025.11.22</p>
+                        <h3>[2025 하반기] 캠페인 봉사 영상</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+</body>
+</html>
